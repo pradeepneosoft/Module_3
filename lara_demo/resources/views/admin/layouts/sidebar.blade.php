@@ -46,11 +46,23 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{ url('admin/banner')}}" class="nav-link">
+                <a href="{{ url('admin/product')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Product</p>
                 </a>
               </li>
+              <li class="nav-item">
+                  <a href="{{ url('admin/users')}}" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Users</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ url('admin/coupon')}}" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Coupons</p>
+                    </a>
+                  </li>
             </ul>
           </li>
           {{-- <li class="nav-item">

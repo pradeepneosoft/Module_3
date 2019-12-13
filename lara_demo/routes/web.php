@@ -20,4 +20,5 @@ Route::get('/home', function () {
 
 Route::resource('admin/banner', 'Admin\\bannerController');
 Route::resource('admin/category', 'Admin\\categoryController');
-Route::resource('admin/category', 'Admin\\categoryController');
+Route::resource('admin/coupon', 'Admin\\couponController');
+Route::resource('admin/product', 'Admin\\productController');
