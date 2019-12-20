@@ -119,9 +119,9 @@
 <script src="{{ asset('admin/plugins/datatables/jquery.dataTables.js')}}"></script>
 <script src="{{ asset('admin/plugins/datatables-bs4/js/dataTables.bootstrap4.js')}}"></script>
 <!-- AdminLTE App -->
-<script src="{{ asset('dist/js/adminlte.min.js')}}"></script>
+<script src="{{ asset('admin/dist/js/adminlte.min.js')}}"></script>
 <!-- AdminLTE for demo purposes -->
-<script src="{{ asset('dist/js/demo.js')}}"></script>
+<script src="{{ asset('admin/dist/js/demo.js')}}"></script>
 <!-- page script -->
 <script>
   $(function () {

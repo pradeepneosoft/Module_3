@@ -25,7 +25,14 @@ class product extends Model
      *
      * @var array
      */
-    protected $fillable = ['name', 'sku', 'short_desc', 'long_desc', 'price', 'special_price', 'special_price_from', 'special_price_to', 'status', 'quantity', 'meta_title', 'meta_description', 'meta_keywords', 'created_by', 'updated_by'];
-
+    protected $fillable = ['name','category_id', 'sku', 'short_desc', 'long_desc', 'price', 'special_price', 'special_price_from', 'special_price_to', 'status', 'quantity', 'meta_title', 'meta_description', 'meta_keywords', 'created_by', 'updated_by'];
+    public function category()
+    {
+        return $this->belongsTo('App\category');
+    }
+    public function product_images()
+    {
+        return $this->hasMany('App\product_image','product_id','id')->where('status','1');
+    }
     
 }

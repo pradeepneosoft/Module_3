@@ -16,6 +16,7 @@ class CreateProductsTable extends Migration
             $table->increments('id');
             $table->timestamps();
             $table->string('name')->nullable();
+            $table->integer('category_id')->nullable();
             $table->string('sku')->nullable();
             $table->string('short_desc')->nullable();
             $table->text('long_desc')->nullable();
